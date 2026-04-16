@@ -1,44 +1,39 @@
-# Construction Site Safety PPE Detection System
+# Report-AI: İnşaat Sahası İSG PPE Tespit Sistemi
 
-![Banner](docs/assets/videoconstruc2.gif)
+![Report-AI Banner](docs/assets/videoconstruc2.gif)
 
-## 🏢 Overview
-This project is an Integrated Safety Monitoring System designed for construction sites. It leverages **YOLOv8** for real-time Personal Protective Equipment (PPE) detection, providing a full-stack solution with a dashboard for safety officers.
-
-> **Safety Fact:** Workers in construction occupations account for nearly 20% of all fatal workplace injuries. This system aims to reduce these risks through automated monitoring and alerting.
+## 🏢 Proje Hakkında
+**Report-AI**, inşaat sahalarında iş sağlığı ve güvenliğini (İSG) artırmak için geliştirilmiş, yapay zeka destekli bir karar destek sistemidir. Sistem, kameralardan gelen görüntüleri gerçek zamanlı olarak analiz ederek kask, yelek ve maske gibi kişisel koruyucu donanımların (PPE) kullanımını denetler.
 
 ---
 
-## 🚀 System Architecture
-The project is organized as a **Monorepo** with three core components:
+## 🚀 Sistem Mimarisi
+Proje, her biri modern teknolojilerle geliştirilmiş 3 ana servisten oluşan bir **Monorepo** yapısındadır:
 
-| Component | Technology | Role |
+| Servis | Teknoloji | Görevi |
 | :--- | :--- | :--- |
-| **Frontend** | Angular + TailwindCSS | Real-time dashboard and camera management. |
-| **Backend** | .NET (ASP.NET Core) | Orchestrator API & Business logic. |
-| **AI Service** | FastAPI + YOLOv8 | Computer Vision engine for PPE detection. |
+| **Frontend Dashboard** | Angular + TailwindCSS | Canlı kamera izleme, ihlal logları ve kamera yönetimi. |
+| **Orchestrator Backend** | .NET (ASP.NET Core) | Veri yönetimi, API orkestrasyonu ve iş mantığı. |
+| **AI Processing Service** | FastAPI + YOLOv8 | Görüntü işleme, nesne tespiti ve MJPEG yayını. |
 
 ---
 
-## 📂 Project Structure
-```text
-├── frontend/             # Angular Dashboard
-├── backend/              # .NET Core Orchestrator
-├── ai-service/           # Python AI Engine (FastAPI)
-├── data/videos/          # Test camera sources (MP4)
-├── infrastructure/       # Deployment and setup scripts
-└── workspace/            # Historical ML artifacts & results
-```
+## 🛠️ Temel Özellikler
+- 🛡️ **Gerçek Zamanlı Tespit:** YOLOv8n modeli ile yüksek doğrulukta PPE denetimi.
+- 📹 **Kamera Yönetimi:** Aktif/Pasif kamera durum kontrolü (Passive Alerts).
+- ⚡ **MJPEG Streaming:** AI tarafından işlenmiş görüntünün doğrudan tarayıcı üzerinden izlenmesi.
+- 🚨 **İhlal Takibi:** Kask veya yelek takmayan işçilerin anlık olarak sistem üzerinde raporlanması.
+- 📊 **Hibrit Mimari:** Python'un AI gücü ile .NET'in kurumsal gücünün entegrasyonu.
 
 ---
 
-## ⚙️ Setup & Installation
+## 📂 Kurulum Notları
 
-### 1. AI Service (Python)
+### 1. AI Servisi (Python)
 ```bash
 cd ai-service
 python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+source venv/bin/activate
 pip install -r ../requirements.txt
 python main.py
 ```
@@ -59,44 +54,10 @@ npm start
 
 ---
 
-## 📊 Detection Capabilities
-The system detects the following classes:
-- ✅ **PPE:** Hardhat, Mask, Safety Vest, Safety Cone.
-- ❌ **Violations:** NO-Hardhat, NO-Mask, NO-Safety Vest.
-- 👤 **Other:** Person, Machinery, Vehicle.
+## 👤 Geliştirici & Katkıda Bulunma
+Bu proje **Report-AI** ekibi tarafından geliştirilmiştir. İş birliği yapmak için arkadaşınızı Collaborator olarak ekleyebilir ve `git pull`/`git push` ile ortak çalışmaya başlayabilirsiniz.
 
 ---
 
-## 🛠️ Key Features
-- [x] **Real-time PPE Detection** using YOLOv8.
-- [x] **Camera Management:** Enable/Disable cameras (Passive/Active state).
-- [x] **MJPEG Streaming:** AI-processed video stream directly in the browser.
-- [x] **Alert System:** Real-time logging of safety violations.
-- [x] **Monorepo Design:** Easy orchestration of all services.
-
----
-
-## 📈 Results & Visuals
-The YOLOv8n model was trained for 100 epochs, achieving high precision in detecting safety gear in diverse conditions.
-
-![Confusion Matrix](workspace/legacy-ml/results/confusion_matrix.png)
-![Training Samples](workspace/legacy-ml/results/train_batch14672.jpg)
-
----
-
-## 🤝 Contributing
-1. Clone the repo.
-2. Initialize and push to your remote.
-3. Add collaborators via GitHub Settings.
-
----
-
-## 📝 License
-MIT License
-
-## Future Work
-
-1. Train the model for more epochs.
-2. Compare with 4 other models by YoloV8.
-3. Create ID tracking of workers and save bounding boxes of workers not wearing proper PPE.
-4. ML App deployment with alarm trigerring.
+## 📝 Lisans
+Bu proje MIT lisansı ile korunmaktadır.
