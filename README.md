@@ -1,7 +1,7 @@
-# Report-AI: İnşaat Sahası İSG Tespit Sistemi
+# Construction-Site-Safety-PPE-Detection: İnşaat Sahası İSG Tespit Sistemi
 
 ## Proje Hakkında
-Report-AI, inşaat sahalarında iş güvenliğini artırmak için geliştirilmiş bir izleme sistemidir. YOLOv8 nesne tespit modelini kullanarak sahadaki kameralardan gelen görüntüleri analiz eder ve çalışanların kask, yelek, maske gibi koruyucu ekipmanları kullanıp kullanmadığını gerçek zamanlı olarak denetler.
+Construction-Site-Safety-PPE-Detection, inşaat sahalarında iş güvenliğini artırmak için geliştirilmiş bir izleme sistemidir. YOLOv8 nesne tespit modelini kullanarak sahadaki kameralardan gelen görüntüleri analiz eder ve çalışanların kask, yelek, maske gibi koruyucu ekipmanları kullanıp kullanmadığını gerçek zamanlı olarak denetler.
 
 ## Sistem Mimarisi
 Proje üç ana parçadan oluşmaktadır:
@@ -45,8 +45,4 @@ npm install
 npm start
 ```
 
-## Katkıda Bulunma
-Projeye yeni özellikler eklemek için ekibi collaborator olarak ekleyebilir ve değişiklikleri pushlayabilirsiniz.
 
-## Lisans
-Bu proje MIT lisansı altındadır.
