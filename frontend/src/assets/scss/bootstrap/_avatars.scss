@@ -1,0 +1,159 @@
+/*----- Avatars -----*/
+
+.country-selector .avatar {
+	width: 1.4rem;
+	height: 1.2rem;
+  }
+  
+  .avatar {
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	color: $white;
+	font-weight: 600;
+	vertical-align: bottom;
+	font-size: .875rem;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  .brround {
+	border-radius: 50%;
+  }
+  
+  .bradius {
+	border-radius: 25%;
+  }
+  
+  .avatar i {
+	font-size: 125%;
+	vertical-align: middle;
+  }
+  
+  .avatar-status {
+	position: absolute;
+	inset-inline-end: -2px;
+	inset-block-end: -2px;
+	width: .75rem;
+	height: .75rem;
+	border: 2px solid $white;
+	background: $gray;
+	border-radius: 50%;
+  }
+  
+  .avatar-sm {
+	width: 1.5rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: .75rem;
+  }
+  
+  .avatar-md {
+	width: 2.5rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	font-size: 1rem;
+  }
+  
+  .avatar-lg {
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 1.25rem;
+  }
+  
+  .avatar-xl {
+	width: 4rem !important;
+	height: 4rem !important;
+	line-height: 3.8rem;
+	font-size: 1.75rem;
+  }
+  
+  .avatar-xxl {
+	width: 5rem;
+	height: 5rem;
+	line-height: 5rem;
+	font-size: 2rem;
+  }
+  
+  .avatar-list {
+	margin: 0 0 -.5rem;
+	padding: 0;
+	font-size: 0;
+  
+	.avatar {
+	  margin-block-end: .5rem;
+  
+	  &:not(:last-child) {
+		margin-inline-end: .5rem;
+	  }
+	}
+  }
+  
+  .avatar-list-stacked .avatar {
+	box-shadow: 0 0 0 2px $white;
+	margin-inline-end: -.8em !important;
+  }
+  
+  .product-price {
+	font-size: 1rem;
+  
+	strong {
+	  font-size: 1.5rem;
+	}
+  }
+  
+  @-webkit-keyframes indeterminate {
+	0% {
+	  inset-inline-start: -35%;
+	  inset-inline-end: 100%;
+	}
+  
+	100%, 60% {
+	  inset-inline-start: 100%;
+	  inset-inline-end: -90%;
+	}
+  }
+  
+  @keyframes indeterminate {
+	0% {
+	  inset-inline-start: -35%;
+	  inset-inline-end: 100%;
+	}
+  
+	100%, 60% {
+	  inset-inline-start: 100%;
+	  inset-inline-end: -90%;
+	}
+  }
+  
+  @-webkit-keyframes indeterminate-short {
+	0% {
+	  inset-inline-start: -200%;
+	  inset-inline-end: 100%;
+	}
+  
+	100%, 60% {
+	  inset-inline-start: 107%;
+	  inset-inline-end: -8%;
+	}
+  }
+  
+  @keyframes indeterminate-short {
+	0% {
+	  inset-inline-start: -200%;
+	  inset-inline-end: 100%;
+	}
+  
+	100%, 60% {
+	  inset-inline-start: 107%;
+	  inset-inline-end: -8%;
+	}
+  }
+
+  /*----- Avatars -----*/

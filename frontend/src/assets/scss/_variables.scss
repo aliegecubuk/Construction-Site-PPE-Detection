@@ -1,0 +1,90 @@
+$background: #f8f8fc;
+$color: #5d5c61;
+$default-color: #303131;
+$border: #e8e9ea;
+
+/*Color Variables*/
+$primary: var(--primary-bg-color);
+$primary-hover: var(--primary-bg-hover);
+$primary-border: var(--primary-bg-border);
+$primary-01: var(--primary01);
+$primary-02: var(--primary02);
+$primary-03: var(--primary03);
+$primary-04: var(--primary04);
+$primary-05: var(--primary05);
+$primary-06: var(--primary06);
+$primary-07: var(--primary07);
+$primary-08: var(--primary08);
+$primary-09: var(--primary09);
+$secondary: #5b73e8;
+$pink: #ec82ef;
+$teal: #2bcbba;
+$cyan: #116e7c;
+$purple: #aa4cf2;
+$success: #38cb89;
+$warning: #ffab00;
+$danger: #ef4b4b;
+$info: #3e80eb;
+$orange: #fc7303;
+$dark: #343a40;
+$indigo: #6574cd;
+$gray: #868e96;
+$white: #fff;
+$black: #000;
+$transparent: #332525;
+
+
+/*white variables*/
+$white-1:rgba(255, 255, 255, 0.1);
+$white-2:rgba(255, 255, 255, 0.2);
+$white-3:rgba(255, 255, 255, 0.3);
+$white-4 :rgba(255, 255, 255, 0.4);
+$white-5 :rgba(255, 255, 255, 0.5);
+$white-6 :rgba(255, 255, 255, 0.6);
+$white-7 :rgba(255, 255, 255, 0.7);
+$white-8 :rgba(255, 255, 255, 0.8);
+$white-9 :rgba(255, 255, 255, 0.9);
+$white-05:rgba(255, 255, 255, 0.05);
+$white-08:rgba(255, 255, 255, 0.08);
+$white-75:rgba(255, 255, 255, 0.075);
+
+/*black variables*/
+$black-1:rgba(0, 0, 0, 0.1);
+$black-2:rgba(0, 0, 0, 0.2);
+$black-3:rgba(0, 0, 0, 0.3);
+$black-4:rgba(0, 0, 0, 0.4);
+$black-5:rgba(0, 0, 0, 0.5);
+$black-6:rgba(0, 0, 0, 0.6);
+$black-7:rgba(0, 0, 0, 0.7);
+$black-8:rgba(0, 0, 0, 0.8);
+$black-9:rgba(0, 0, 0, 0.9);
+$black-05:rgba(0, 0, 0, 0.05);
+
+/*Gradient variables*/
+$primary-gradient: linear-gradient(to right, $primary 0%, $primary-09 90%);
+
+/*Shadow Variables*/
+$shadow: 0 0.76rem 1.52rem rgba(18, 38, 63, 0.03);
+
+/*Dark Theme Variables*/
+
+$dark-body: var(--dark-body);
+$dark-theme: var(--dark-theme);
+$dark-bg: var(--dark-bg);
+$dark-color: #ccd4e0;
+$border-dark: var(--dark-border);
+$dark-card-shadow: 0 3px 9px 0 rgba(28, 28, 51, 0.15);
+
+/*Colors*/
+$primary2: #2ec49f;
+$primary3: #0062cd;
+$primary4: #f66347;
+$primary5: #06bfd3;
+
+$float-left:var(--float-left);
+$float-right:var(--float-right);
+
+[dir="rtl"] {
+  --float-left:right;
+  --float-right:left;
+}

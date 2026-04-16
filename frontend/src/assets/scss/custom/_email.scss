@@ -1,0 +1,145 @@
+/*------ Email services -------*/
+  .table-inbox {
+	border: 1px solid $border;
+	margin-block-end: 0;
+  
+	tr {
+	  border-block-end: 1px solid $border;
+  
+	  &:last-child {
+		border-block-end: 0;
+	  }
+  
+	  td {
+		padding: 12px !important;
+		vertical-align: middle;
+  
+		&:hover {
+		  cursor: pointer;
+		}
+  
+		.fa-star {
+		  &.inbox-lefted, &:hover {
+			color: #e6e9f1;
+		  }
+  
+		  color: #e4e4ed;
+		  font-size: 16px;
+		}
+  
+		.fa-bookmark {
+		  color: #e4e4ed;
+		}
+  
+		&.view-message i {
+		  display: inline-block;
+		  height: 40px;
+		  width: 40px;
+		  line-height: 40px;
+		  text-align: center;
+		  border-radius: 100%;
+		  font-size: 16px !important;
+		  box-shadow: 0px 2px 3px rgba(4, 4, 7, 0.1);
+		  border: 1px solid $border;
+		  vertical-align: middle;
+		  color: #5c678f;
+		}
+	  }
+  
+	  &.unread td {
+		background: #f0f0f2;
+		font-weight: 600;
+		border-block-end: $border 1px solid;
+	  }
+	}
+  }
+  
+  ul.inbox-pagination {
+	float: right;
+  
+	li {
+	  float: left;
+	}
+  }
+  
+  .mail-option {
+	display: inline-block;
+	margin-block-end: 10px;
+	width: 100%;
+  
+	.chk-all, .btn-group {
+	  margin-inline-end: 5px;
+	}
+  
+	.chk-all, .btn-group a.btn {
+	  border: 1px solid $border;
+	  border-radius: 3px !important;
+	  display: inline-block;
+	  padding: 5px 10px;
+	}
+  }
+  
+  .inbox-pagination a.np-btn {
+	border: 1px solid $border;
+	border-radius: 3px !important;
+	display: inline-block;
+	padding: 5px 15px;
+	margin-inline-start: 5px;
+  }
+  
+  .mail-option {
+	.chk-all input[type="checkbox"] {
+	  margin-block-start: 0;
+	}
+  
+	.btn-group a.all {
+	  border: medium none;
+	  padding: 0;
+	}
+  }
+  
+  .inbox-pagination li span {
+	display: inline-block;
+	margin-inline-end: 5px;
+	margin-block-start: 7px;
+  }
+  
+  .inbox-body .modal .modal-body {
+	input, textarea {
+	  border: 1px solid #e6e6e6;
+	  box-shadow: none;
+	}
+  }
+  
+  .modal-header h4.modal-title {
+	font-weight: 300;
+  }
+  
+  .modal-body label {
+	font-weight: 400;
+  }
+  
+  .email-icon {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 100%;
+	font-size: 16px !important;
+	box-shadow: 0px 2px 3px rgba(4, 4, 7, 0.1);
+	border: 1px solid $border;
+	vertical-align: middle;
+	color: #5c678f;
+  
+	i {
+	  color: #5c678f;
+	}
+  }
+  
+  .card .list-group.mail-inbox-elements{
+  	border-block-end:1px solid $border !important;
+	border-radius: 0;
+  	}
+
+	/*------ Email services End -------*/

@@ -1,0 +1,157 @@
+/*----- Date Picker ----*/
+
+.ui-datepicker {
+	background-color: $white;
+	border: 1px solid $border;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 10px;
+	margin: 0px 0 0;
+	display: none;
+	width: auto !important;
+	z-index: 5 !important;
+	box-shadow: $shadow;
+	border-radius: 4px;
+  
+	.ui-datepicker-header {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  position: relative;
+	  font-weight: 500;
+	  font-size: 12px;
+	  text-transform: uppercase;
+	  color: #473b52;
+	  padding: 0 0 5px;
+	  letter-spacing: 1px;
+	  border: 0;
+	  background-color: transparent;
+	  border-start-end-radius: 3px;
+	  border-start-end-radius: 3px;
+  
+	  .ui-datepicker-next, .ui-datepicker-prev {
+		text-indent: -99999px;
+		color: #6c757d;
+		inset-block-start: 1px;
+	  }
+  
+	  .ui-datepicker-next::before, .ui-datepicker-prev::before {
+		font-size: 16px;
+		font-family: 'FontAwesome';
+		position: absolute;
+		inset-block-start: -4px;
+		text-indent: 0;
+	  }
+  
+	  .ui-datepicker-next {
+		&:hover::before, &:focus::before {
+		  color: $dark;
+		}
+	  }
+  
+	  .ui-datepicker-prev {
+		&:hover::before, &:focus::before {
+		  color: $dark;
+		}
+	  }
+  
+	  .ui-datepicker-next {
+		order: 3;
+  
+		&:before {
+		  inset-inline-end: 5px;
+		  content: '\f105';
+		}
+	  }
+  
+	  .ui-datepicker-prev:before {
+		inset-inline-start: 5px;
+		content: '\f104';
+	  }
+  
+	  .ui-datepicker-next-hover, .ui-datepicker-prev-hover {
+		color: #495057;
+		cursor: pointer;
+		inset-block-start: 1px;
+		border: 0;
+		background-color: transparent;
+	  }
+	}
+  }
+  
+  .ui-datepicker-multi {
+	.ui-datepicker-group {
+	  padding-inline-end: 15px;
+	  width: auto;
+	  float: $float-left;
+  
+	  .ui-datepicker-title {
+		margin: auto;
+	  }
+  
+	  .ui-datepicker-prev::before {
+		inset-inline-start: 10px;
+	  }
+  
+	  .ui-datepicker-next::before {
+		inset-inline-end: 10px;
+	  }
+  
+	  table {
+		margin: 0;
+	  }
+	}
+  
+	.ui-datepicker-group-last {
+	  padding-inline-end: 0;
+	}
+  }
+  
+  .ui-datepicker-inline {
+	max-width: 270px;
+	border-radius: 12px;
+  }
+  
+  .custom-checkbox {
+	&:before {
+	  position: absolute;
+	  inset-block-start: 0.25rem;
+	  inset-inline-start: 0;
+	  display: block;
+	  width: 1rem;
+	  height: 1rem;
+	  pointer-events: none;
+	  content: "";
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	  background-color: transparent;
+	}
+  
+	&:after {
+	  position: absolute;
+	  inset-block-start: 0.25rem;
+	  inset-inline-start: 0;
+	  display: block;
+	  width: 1rem;
+	  height: 1rem;
+	  content: "";
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 50% 50%;
+	}
+  }
+  
+  .form-control.fc-datepicker {
+	border-start-end-radius: 0 !important;
+	border-end-start-radius: 0 !important;
+  }
+
+  #ui-datepicker-div{
+	tbody, td, tfoot, th, thead, tr {
+		padding: 8px;
+	}
+  }
+
+  /*----- Date Picker End----*/

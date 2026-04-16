@@ -1,0 +1,26 @@
+@import url("assets/plugins/bootstrap/css/bootstrap.min.css");
+@import url("assets/css/plugins.css");
+@import url("assets/css/icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(80, 192, 212, 0.16), transparent 26%),
+    linear-gradient(180deg, #eef4fb 0%, #f8f8fc 52%, #eff3f8 100%);
+}
+
+app-root {
+  display: block;
+  min-height: 100vh;
+}

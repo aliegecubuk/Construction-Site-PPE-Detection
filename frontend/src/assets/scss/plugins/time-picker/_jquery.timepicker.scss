@@ -1,0 +1,91 @@
+
+/* ************** JQUERY TIMEPICKER OPEN ************** */
+
+.ui-timepicker-wrapper {
+	overflow-y: auto;
+	max-height: 150px;
+	width: 6.5em;
+	background: $white;
+	border: 1px solid #ddd;
+	-webkit-box-shadow: 0 5px 10px $black-2;
+	-moz-box-shadow: 0 5px 10px $black-2;
+	box-shadow: 0 5px 10px $black-2;
+	outline: none;
+	z-index: 10001;
+	margin: 0;
+}
+
+.ui-timepicker-wrapper.ui-timepicker-with-duration {
+	width: 13em;
+}
+
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-30 {
+	width: 11em;
+}
+
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-60 {
+	width: 11em;
+}
+
+.ui-timepicker-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	&:hover {
+		.ui-timepicker-duration {
+			color: #888;
+		}
+
+		.ui-timepicker-selected {
+			background: $white;
+		}
+	}
+
+	li {
+		padding: 0px 10px;
+		cursor: pointer;
+		white-space: nowrap;
+		color: #000;
+		list-style: none;
+		margin: 0;
+		height: 35px;
+		line-height: 35px;
+
+		&:hover {
+			.ui-timepicker-duration {
+				color: #ccc;
+			}
+		}
+	}
+
+	li.ui-timepicker-disabled {
+		color: #888;
+		cursor: default;
+
+		&:hover {
+			color: #888;
+			cursor: default;
+			background: #f2f2f2;
+		}
+	}
+
+	li.ui-timepicker-selected.ui-timepicker-disabled {
+		color: #888;
+		cursor: default;
+		background: #f2f2f2;
+	}
+}
+
+.ui-timepicker-duration {
+	margin-inline-start: 5px;
+	color: #888;
+}
+
+li.ui-timepicker-selected {
+	.ui-timepicker-duration {
+		color: #ccc;
+	}
+}
+
+/* ************** JQUERY TIMEPICKER CLOSED ************** */

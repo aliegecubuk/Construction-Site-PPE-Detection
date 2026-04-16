@@ -1,0 +1,90 @@
+.rtl {
+  .mat-tree.cdk-tree {
+    .fa-chevron-right {
+      transform: rotate(180deg);
+    }
+  }
+
+  .ngb-datatable .ng-select-searchable {
+    left: 26px;
+    right: auto;
+  }
+
+  #circled {
+
+    .fa-chevron-circle-right,
+    .fa-chevron-circle-left {
+      transform: rotate(-180deg);
+    }
+  }
+
+  ul.inbox-pagination {
+    float: left;
+
+    li {
+      float: right;
+    }
+  }
+
+  .notifier__notification-button-icon {
+    margin-right: 10px;
+  }
+
+  .ngx-colors-overlay {
+    direction: ltr;
+  }
+
+  .shape {
+    float: left;
+  }
+
+  .badgetext {
+    float: left;
+  }
+
+  .angular-editor-toolbar .angular-editor-toolbar-set .foreground :after {
+    left: -16px;
+  }
+
+  .ngb-dp-arrow-prev {
+    .ngb-dp-navigation-chevron {
+      transform: rotate(41deg) !important;
+    }
+  }
+
+  .ngb-dp-arrow-next .ngb-dp-navigation-chevron {
+    transform: rotate(-135deg) !important;
+  }
+
+  .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon.left {
+    border-right: none !important;
+    border-color: #5c80a5 !important;
+  }
+
+  #checkoutsteps .total {
+    float: left;
+  }
+
+  .NgxEditor__Dropdown .NgxEditor__Dropdown--Text:after {
+    margin-right: 24px;
+    margin-left: 0px;
+  }
+
+  .timelineleft>li>.timelineleft-item>.time {
+    float: left !important;
+  }
+
+  .new-invoice-section .card-body {
+    #invoicedatatable {
+      border-left-width: 2px !important;
+    }
+  }
+}
+
+.rtl.dark-mode {
+  .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon.left {
+    border-left: 1px solid #5c80a5 !important;
+    border-right: none !important;
+  }
+
+}

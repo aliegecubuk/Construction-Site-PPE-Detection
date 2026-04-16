@@ -1,0 +1,155 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project        :   Azea – Angular  Admin & Dashboard Template
+Version        :   V.3
+Create Date    :   24-Mar-2022
+Updated Date    :  08-Sep-2023
+Copyright      :   Spruko Technologies Private Limited 
+Author         :   Spruko
+Author URL     :   https://themeforest.net/user/spruko
+Support	       :   support@spruko.com
+License        :   Licensed under ThemeForest License
+
+-------------------------------------------------------------------*/
+/*
+//---------- TABLE OF CONTENTS ----------//
+* Accordion
+* Alerts
+* Badges
+* Bootstrap-styles
+* Breadcrumb
+* Buttons
+* Carousel
+* DropDowns
+* LandingPage-styles
+* Lists
+* Modal
+* Navigation
+* Panel
+* Progress
+* Tags
+* Thumbnails
+* Tooptip &popover
+* Typography
+* Calendar
+* Chat
+* Chat2
+* Contact
+* Rangeslider
+* Rating
+* Custom-styles
+* Email services
+* Icons List
+* Loaders
+* Style
+* Tables
+* Vectormap
+* Widgets
+* Custom control
+* Date Picker
+* Forms-elements
+* Wizard-elements
+* Input-group
+* Selectgroup
+* Alignments
+* Background colors
+* Cards
+* Colors
+* Dark-styles
+* Double-menus
+* Horizontal-menu
+* Layouts
+* Rtl
+* Sidemenu
+* Skin-modes
+* Gallery
+* Pricing
+* Profile
+* Plugins
+*/
+
+@import "custom/fonts/fonts";
+
+
+/* ###### bootstrap ####### */
+@import "variables";
+@import "bootstrap/bootstrap-styles";
+@import "custom/style";
+@import "bootstrap/accordion";
+@import "bootstrap/alerts";
+@import "bootstrap/avatars";
+@import "bootstrap/badges";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/buttons";
+@import "bootstrap/carousel";
+@import "bootstrap/dropdown";
+@import "bootstrap/landing";
+@import "bootstrap/list";
+@import "bootstrap/modal";
+@import "bootstrap/navigation";
+@import "bootstrap/panel";
+@import "bootstrap/progress";
+@import "bootstrap/tags";
+@import "bootstrap/thumbnail";
+@import "bootstrap/tooltip&popover";
+@import "bootstrap/typhography";
+
+/* ###### components ####### */
+
+@import "components/calendar";
+@import "components/chat";
+@import "components/chat2";
+@import "components/contact";
+@import "components/rangeslider";
+@import "components/rating";
+
+
+/* ###### custom ####### */
+
+@import "custom/custom-styles";
+@import "custom/email";
+@import "custom/icon-list";
+@import "custom/loader";
+@import "custom/tables";
+@import "custom/vectormap";
+@import "custom/widgets";
+
+
+/* ###### forms ####### */
+
+@import "forms/custom-control";
+@import "forms/date-picker";
+@import "forms/form-elements";
+@import "forms/form-wizard";
+@import "forms/input-group";
+@import "forms/select-group";
+
+
+/* ###### layouts ####### */
+
+@import "layouts/alignments";
+@import "layouts/backgrounds";
+@import "layouts/cards";
+@import "layouts/color1";
+@import "layouts/dark-style";
+@import "layouts/double-menu-styles";
+@import "layouts/horizontal-menu";
+@import "layouts/layouts";
+@import "layouts/rtl";
+@import "layouts/side-menu";
+@import "layouts/skin-modes";
+
+
+
+
+/* ######  pages ###### */
+
+@import "pages/gallery";
+@import "pages/pricing";
+@import "pages/profile";
+
+@import "global/bootstrap";
+@import "global/darkstyles";
+@import "global/custom-styles";
+@import "global/rtl-styles";

@@ -1,0 +1,27 @@
+.runtime/
+.pytest_cache/
+
+# Frontend
+frontend/node_modules/
+frontend/.angular/
+frontend/dist/
+
+# AI Service
+ai-service/venv/
+ai-service/__pycache__/
+ai-service/.pytest_cache/
+ai-service/*.log
+*.pyc
+
+# Backend (.NET)
+backend/**/bin/
+backend/**/obj/
+.vs/
+*.user
+*.suo
+
+# Project Logs
+logs/
+
+# VS Code
+.vscode/

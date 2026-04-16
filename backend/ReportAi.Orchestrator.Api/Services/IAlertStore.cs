@@ -1,0 +1,11 @@
+using ReportAi.Orchestrator.Api.Models;
+
+namespace ReportAi.Orchestrator.Api.Services;
+
+public interface IAlertStore
+{
+    Task InitializeAsync(CancellationToken cancellationToken);
+    Task SaveAsync(PythonViolationEvent alert, CancellationToken cancellationToken);
+    IReadOnlyCollection<PythonViolationEvent> GetRecent(int limit);
+    IReadOnlyCollection<PythonViolationEvent> Query(string? cameraId, DateTimeOffset since);
+}

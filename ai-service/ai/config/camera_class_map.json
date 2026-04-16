@@ -1,0 +1,100 @@
+{
+  "cameras": [
+    {
+      "camera_id": "camera_1",
+      "name": "Kamera 1",
+      "source": "C:\\Users\\Gaming\\Downloads\\Construction-Site-Safety-PPE-Detection-main\\Construction-Site-Safety-PPE-Detection-main\\data\\videos\\kasknmasknvestn.mp4",
+      "source_type": "local_file",
+      "enabled": true,
+      "detection_classes": {
+        "Hardhat": true,
+        "Mask": true,
+        "NO-Hardhat": true,
+        "NO-Mask": true,
+        "NO-Safety Vest": true,
+        "Person": true,
+        "Safety Cone": true,
+        "Safety Vest": true,
+        "machinery": true,
+        "vehicle": true
+      },
+      "required_ppe": {
+        "hardhat": true,
+        "safety_vest": true,
+        "mask": true
+      }
+    },
+    {
+      "camera_id": "camera_2",
+      "name": "Kamera 2",
+      "source": "C:\\Users\\Gaming\\Downloads\\Construction-Site-Safety-PPE-Detection-main\\Construction-Site-Safety-PPE-Detection-main\\data\\videos\\kaskymasknvestn.mp4",
+      "source_type": "local_file",
+      "enabled": false,
+      "detection_classes": {
+        "Hardhat": true,
+        "Mask": true,
+        "NO-Hardhat": true,
+        "NO-Mask": true,
+        "NO-Safety Vest": true,
+        "Person": true,
+        "Safety Cone": true,
+        "Safety Vest": true,
+        "machinery": true,
+        "vehicle": true
+      },
+      "required_ppe": {
+        "hardhat": true,
+        "safety_vest": true,
+        "mask": true
+      }
+    },
+    {
+      "camera_id": "camera_3",
+      "name": "Kamera 3",
+      "source": "C:\\Users\\Gaming\\Downloads\\Construction-Site-Safety-PPE-Detection-main\\Construction-Site-Safety-PPE-Detection-main\\data\\videos\\kaskymasknvesty.mp4",
+      "source_type": "local_file",
+      "enabled": false,
+      "detection_classes": {
+        "Hardhat": true,
+        "Mask": true,
+        "NO-Hardhat": true,
+        "NO-Mask": true,
+        "NO-Safety Vest": true,
+        "Person": true,
+        "Safety Cone": true,
+        "Safety Vest": true,
+        "machinery": true,
+        "vehicle": true
+      },
+      "required_ppe": {
+        "hardhat": true,
+        "safety_vest": true,
+        "mask": true
+      }
+    },
+    {
+      "camera_id": "camera_4",
+      "name": "Kamera 4",
+      "source": "C:\\Users\\Gaming\\Downloads\\Construction-Site-Safety-PPE-Detection-main\\Construction-Site-Safety-PPE-Detection-main\\data\\videos\\kaskymaskyvestn.mp4",
+      "source_type": "local_file",
+      "enabled": false,
+      "detection_classes": {
+        "Hardhat": true,
+        "Mask": true,
+        "NO-Hardhat": true,
+        "NO-Mask": true,
+        "NO-Safety Vest": true,
+        "Person": true,
+        "Safety Cone": true,
+        "Safety Vest": true,
+        "machinery": true,
+        "vehicle": true
+      },
+      "required_ppe": {
+        "hardhat": true,
+        "safety_vest": true,
+        "mask": true
+      }
+    }
+  ]
+}

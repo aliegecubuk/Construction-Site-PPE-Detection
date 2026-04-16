@@ -1,0 +1,46 @@
+/*----- Typography ------*/
+
+.heading-inverse {
+	background-color: #333;
+	color: $white;
+	padding: 5px;
+  }
+  
+  .media {
+	margin-block-start: 15px;
+	zoom: 1;
+	overflow: hidden;
+  }
+  
+  .media-body {
+	zoom: 1;
+	overflow: hidden;
+  }
+  
+  .media-object {
+	display: block;
+  }
+  
+  .media {
+	img {
+	  width: 40px;
+	  height: 40px;
+	}
+  
+	&.media-lg img {
+	  width: 80px;
+	  height: 80px;
+	}
+  }
+  
+  .media-body {
+	display: table-cell;
+	vertical-align: top;
+  }
+  
+  .media-body h4 {
+	font-weight: 600;
+	font-size: 16px;
+  }
+
+  /*----- Typography End------*/

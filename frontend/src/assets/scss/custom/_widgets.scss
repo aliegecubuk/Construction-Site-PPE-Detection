@@ -1,0 +1,344 @@
+
+/*------ Widgets-----*/
+
+.widgets {
+	font-size: 35px;
+	padding: 20px;
+  }
+  
+  .media {
+	display: flex;
+	align-items: flex-left;
+  }
+  
+  .media-body {
+	flex: 1;
+  }
+  
+  .input-icon {
+	position: relative;
+  
+	.form-control {
+	  &:not(:last-child), &:not(:first-child) {
+		padding-inline-start: 2.5rem;
+	  }
+	}
+  }
+  
+  .input-icon-addon {
+	position: absolute;
+	inset-block-start: 0;
+	inset-block-end: 0;
+	inset-inline-start: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	min-width: 2.5rem;
+	pointer-events: none;
+  
+	&:last-child {
+	  inset-inline-start: auto;
+	}
+  }
+  
+  .state-valid {
+	padding-inline-end: 2rem;
+	background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%235eba00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'><polyline points='20 6 9 17 4 12'></polyline></svg>") no-repeat center right 0.5rem / 1rem;
+  }
+  
+  .state-invalid {
+	padding-inline-end: 2rem;
+	background: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23cd201f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg>") no-repeat center right 0.5rem / 1rem;
+  }
+  
+  .form-help {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	color: $primary;
+	background: #f6f6fa;
+	border-radius: 50%;
+	font-size: 0.75rem;
+	transition: .3s background-color, .3s color;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin:10px;
+  
+	&:hover, &[aria-describedby] {
+	  background: $primary;
+	  color: $white;
+	}
+  }
+  
+  @-webkit-keyframes status-pulse {
+	0%, 100% {
+	  opacity: 1;
+	}
+  
+	50% {
+	  opacity: .32;
+	}
+  }
+  
+  @keyframes status-pulse {
+	0%, 100% {
+	  opacity: 1;
+	}
+  
+	50% {
+	  opacity: .32;
+	}
+  }
+  
+  .status-animated {
+	-webkit-animation: 1s status-pulse infinite ease;
+	animation: 1s status-pulse infinite ease;
+  }
+  
+  .chart-circle {
+	display: block;
+	height: 8rem;
+	width: 8rem;
+	position: relative;
+	margin: 0 auto;
+  
+	canvas {
+	  margin: 0 auto;
+	  display: block;
+	  max-width: 100%;
+	  max-height: 100%;
+	}
+  }
+  
+  .chart-circle-xs {
+	height: 2.5rem;
+	width: 2.5rem;
+	font-size: .8rem;
+  }
+  
+  .chart-circle-sm {
+	height: 4rem;
+	width: 4rem;
+	font-size: .8rem;
+  }
+  
+  .chart-circle-md {
+	height: 6rem;
+	width: 6rem;
+	font-size: .8rem;
+  }
+  
+  .chart-circle-lg {
+	height: 10rem;
+	width: 10rem;
+	font-size: .8rem;
+  }
+  
+  .chart-circle-value {
+	position: absolute;
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	inset-inline-end: 0;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+	inset-block-end: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	line-height: 1;
+  
+	small {
+	  display: block;
+	  color: #9aa0ac;
+	  font-size: 0.9375rem;
+	}
+  }
+  
+  .example {
+	padding: 1.5rem;
+	border-radius: 3px 3px 0 0;
+	font-size: 0.9375rem;
+  }
+  
+  .example + .highlight {
+	border-block-start: none;
+	margin-block-start: 0;
+	border-radius: 0 0 3px 3px;
+  }
+  
+  #back-to-top {
+	color: $white;
+	position: fixed;
+	inset-block-end: 20px;
+	inset-inline-end: 20px;
+	z-index: 999;
+	display: none;
+	text-align: center;
+	border-radius: 4px !important;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-o-border-radius: 2px;
+	height: 50px;
+	width: 50px;
+	line-height: 4;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: background-color 0.1s linear;
+	-moz-transition: background-color 0.1s linear;
+	-webkit-transition: background-color 0.1s linear;
+	-o-transition: background-color 0.1s linear;
+  
+	i {
+	  padding-block-start: 15px;
+	  font-size: 16px;
+	}
+  }
+  
+  .tabs-menu ul li {
+	a {
+	  padding: 10px 20px 11px 20px;
+	  display: block;
+	  border: 0px solid $border;
+	  margin: 3px;
+	  border-radius: 4px;
+	  font-weight:500;
+	}
+  
+	.active {
+	  color: $primary !important;
+	}
+  }
+  
+  .tabs-menu1 ul li a {
+	padding: 10px 20px 11px 20px;
+	display: block;
+	font-weight: 500;
+  }
+  
+  .tabs-menu-body {
+	padding: 15px;
+	border: 1px solid $border;
+	border-radius: 0 0 5px 5px;
+  
+	p:last-child {
+	  margin-block-end: 0;
+	}
+  }
+  
+  .tab-menu-heading {
+	padding: 20px 0px 20px 0px;
+	border-block-end: 0;
+	border-radius: 5px 5px 0 0;
+  }
+  
+  .tab_wrapper .content_wrapper .tab_content.active p:last-child {
+	margin-block-end: 0;
+  }
+  
+  .item-card {
+	.cardbody {
+	  position: relative;
+	  padding: 30px 15px;
+	  border-radius: 0 0 .2rem .2rem;
+	}
+  
+	.cardtitle {
+	  span {
+		display: block;
+		font-size: .75rem;
+	  }
+  
+	  a {
+		font-weight: 400;
+		text-decoration: none;
+	  }
+	}
+  
+	.cardprice {
+	  position: absolute;
+	  inset-inline-end: 0;
+  
+	  span {
+		&.type--strikethrough {
+		  opacity: 0.5;
+		  text-decoration: line-through;
+		  font-size: 14px;
+		  font-weight: 400;
+		}
+  
+		display: block;
+		font-size: 18px;
+		font-weight: 500;
+	  }
+	}
+  }
+  
+  .features {
+	overflow: hidden;
+  
+	h2 {
+	  font-weight: 600;
+	  margin-block-end: 12px;
+	  text-align: center;
+	  font-size: 2.2em;
+	}
+  
+	h3 {
+	  font-size: 20px;
+	  font-weight: 600;
+	}
+  
+	span {
+	  color: #43414e;
+	  display: block;
+	  font-weight: 400;
+	  text-align: center;
+	}
+  }
+  
+  .sub-panel-heading .tabs-menu ul li {
+	a.active {
+	  background: $white;
+	  border-radius: 0;
+	}
+  
+	display: block;
+	width: 100%;
+	
+  
+	&:last-child {
+	  border-block-end: 0;
+	}
+  
+	a {
+	  padding: 15px 20px;
+	}
+  }
+  
+  .invoicelist, .invoicedetailspage {
+	max-height: 600px;
+	height: 600px;
+    overflow: auto;
+  }
+  
+  .receipts-inline-table .tabs-menu1 ul li .active {
+	background: #f8f8f9;
+	border-radius: 4px 4px 0 0;
+	border-block-end: 0;
+  }
+  
+/*------ Widgets End-----*/

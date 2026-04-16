@@ -1,0 +1,479 @@
+
+/* ************** RANGE SLIDER OPEN ************** */
+
+/* Ion.RangeSlider, Flat UI Skin
+// css version 2.0.3
+// Â© Denis Ineshin, 2014    https://github.com/IonDen
+// ===================================================================================================================*/
+/* =====================================================================================================================
+// Skin details */
+/*--- RANGE SLIDER ---*/
+/* #################### COLOR VARIANT SKINS #################### */
+/* #################### MODERN SKIN #################### */
+/* #################### OUTLINE SKIN #################### */
+/*--- RANGE SLIDER ---*/
+.irs-line-mid {
+	background: url(../plugins/ion-rangeslider/img/sprite-skin-flat.png) repeat-x;
+	height: 12px;
+	background-position: 0 0;
+	background-image: none;
+	background-color: #ebecf1;
+}
+
+.irs-line-left {
+	background: url(../plugins/ion-rangeslider/img/sprite-skin-flat.png) repeat-x;
+	height: 12px;
+	background-position: 0 -30px;
+	background-image: none;
+	background-color: #ebecf1;
+	border-start-end-radius: 0;
+	border-end-start-radius: 0;
+}
+
+.irs-line-right {
+	background: url(../plugins/ion-rangeslider/img/sprite-skin-flat.png) repeat-x;
+	height: 12px;
+	background-position: 100% -30px;
+	background-image: none;
+	background-color: #ebecf1;
+	border-start-end-radius: 0;
+	border-end-end-radius: 0;
+}
+
+.irs-bar {
+	background: url(../plugins/ion-rangeslider/img/sprite-skin-flat.png) repeat-x;
+	height: 12px;
+	inset-block-start: 25px;
+	background-position: 0 -60px;
+}
+
+.irs-bar-edge {
+	background: url(../plugins/ion-rangeslider/img/sprite-skin-flat.png) repeat-x;
+	inset-block-start: 25px;
+	height: 12px;
+	width: 9px;
+	background-position: 0 -90px;
+	border-start-end-radius: 0;
+	border-end-start-radius: 0;
+}
+
+.irs-slider {
+	background: url(../plugins/ion-rangeslider/img/sprite-skin-flat.png) repeat-x;
+	width: 16px;
+	height: 18px;
+	inset-block-start: 22px;
+	background-position: 0 -120px;
+	background-image: none;
+
+	&:hover {
+		background-position: 0 -150px;
+	}
+
+	&:before {
+		content: '';
+		width: 2px;
+		height: 18px;
+		position: absolute;
+		inset-inline-start: 50%;
+		margin-inline-start: -1px;
+	}
+}
+
+.irs {
+	height: 40px;
+}
+
+.irs-with-grid {
+	height: 60px;
+}
+
+.irs-line {
+	height: 12px;
+	inset-block-start: 25px;
+}
+
+.irs-shadow {
+	height: 3px;
+	inset-block-start: 34px;
+	background: #000;
+	opacity: 0.25;
+}
+
+.lt-ie9 {
+	.irs-shadow {
+		filter: alpha(opacity=25);
+	}
+}
+
+.irs-slider.state_hover {
+	background-position: 0 -150px;
+}
+
+.irs-min {
+	color: #495057;
+	font-size: 10px;
+	line-height: 1.333;
+	text-shadow: none;
+	inset-block-start: 0;
+	padding: 2px 6px;
+	background: #f0f0f2;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: "Roboto", sans-serif;
+}
+
+.irs-max {
+	color: #495057;
+	font-size: 10px;
+	line-height: 1.333;
+	text-shadow: none;
+	inset-block-start: 0;
+	padding: 2px 6px;
+	background: #f0f0f2;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: "Roboto", sans-serif;
+}
+
+.irs-from {
+	color: $white;
+	font-size: 10px;
+	line-height: 1.333;
+	text-shadow: none;
+	padding: 1px 5px;
+	background: #0BAAA8;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 0;
+
+	&:after {
+		position: absolute;
+		display: block;
+		content: "";
+		inset-block-end: -6px;
+		inset-inline-start: 50%;
+		width: 0;
+		height: 0;
+		margin-inline-start: -3px;
+		overflow: hidden;
+		border: 3px solid transparent;
+		border-block-start-color: #0BAAA8;
+	}
+}
+
+.irs-to {
+	color: $white;
+	font-size: 10px;
+	line-height: 1.333;
+	text-shadow: none;
+	padding: 1px 5px;
+	background: #0BAAA8;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 0;
+
+	&:after {
+		position: absolute;
+		display: block;
+		content: "";
+		inset-block-end: -6px;
+		inset-inline-start: 50%;
+		width: 0;
+		height: 0;
+		margin-inline-start: -3px;
+		overflow: hidden;
+		border: 3px solid transparent;
+		border-block-start-color: #0BAAA8;
+	}
+}
+
+.irs-single {
+	color: $white;
+	font-size: 10px;
+	line-height: 1.333;
+	text-shadow: none;
+	padding: 1px 5px;
+	background: #0BAAA8;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 0;
+
+	&:after {
+		position: absolute;
+		display: block;
+		content: "";
+		inset-block-end: -6px;
+		inset-inline-start: 50%;
+		width: 0;
+		height: 0;
+		margin-inline-start: -3px;
+		overflow: hidden;
+		border: 3px solid transparent;
+		border-block-start-color: #0BAAA8;
+	}
+}
+
+.irs-grid-text {
+	color: #999;
+}
+
+.irs-success {
+	.irs-bar {
+		background-color: #28c76f;
+	}
+
+	.irs-bar-edge {
+		background-color: #28c76f;
+	}
+
+	.irs-slider {
+		&::before {
+			background-color: #28c76f;
+		}
+	}
+
+	.irs-from {
+		background-color: #28c76f;
+
+		&::after {
+			border-block-start-color: #28c76f;
+		}
+	}
+
+	.irs-to {
+		background-color: #28c76f;
+
+		&::after {
+			border-block-start-color: #28c76f;
+		}
+	}
+
+	.irs-single {
+		background-color: #28c76f;
+
+		&::after {
+			border-block-start-color: #28c76f;
+		}
+	}
+}
+
+.irs-dark {
+	.irs-bar {
+		background-color: #191621;
+	}
+
+	.irs-bar-edge {
+		background-color: #191621;
+	}
+
+	.irs-slider {
+		&::before {
+			background-color: #191621;
+		}
+	}
+
+	.irs-from {
+		background-color: #191621;
+
+		&::after {
+			border-block-start-color: #191621;
+		}
+	}
+
+	.irs-to {
+		background-color: #191621;
+
+		&::after {
+			border-block-start-color: #191621;
+		}
+	}
+
+	.irs-single {
+		background-color: #191621;
+
+		&::after {
+			border-block-start-color: #191621;
+		}
+	}
+}
+
+.irs-modern {
+	.irs-line-left {
+		height: 6px;
+		box-shadow: inset -2px 2px 2px 0 rgba(34, 34, 34, 0.1);
+	}
+
+	.irs-line-mid {
+		height: 6px;
+		box-shadow: inset -2px 2px 2px 0 rgba(34, 34, 34, 0.1);
+	}
+
+	.irs-line-right {
+		height: 6px;
+		box-shadow: inset -2px 2px 2px 0 rgba(34, 34, 34, 0.1);
+	}
+
+	.irs-bar {
+		height: 6px;
+		box-shadow: inset 0 1px 1px 0 rgba(34, 34, 34, 0.1);
+	}
+
+	.irs-bar-edge {
+		height: 6px;
+		box-shadow: inset 0 1px 1px 0 rgba(34, 34, 34, 0.1);
+	}
+
+	.irs-slider {
+		inset-block-start: 19px;
+		background-color: $white;
+		border-radius: 0;
+
+		&::before {
+			width: 4px;
+			height: 9px;
+			background-color: $white;
+			margin-inline-start: -2px;
+			inset-block-start: 3px;
+		}
+	}
+}
+
+.irs-modern.irs-success {
+	.irs-slider {
+		border-color: #28c76f;
+
+		&::before {
+			border-color: #28c76f;
+		}
+	}
+}
+
+.irs-modern.irs-dark {
+	.irs-slider {
+		border-color: #14112d;
+
+		&::before {
+			border-color: #14112d;
+		}
+	}
+}
+
+.irs-outline {
+	.irs-line {
+		height: 10px;
+		border-radius: 5px;
+	}
+
+	.irs-line-left {
+		height: 10px;
+		background-color: transparent;
+	}
+
+	.irs-line-mid {
+		height: 10px;
+		background-color: transparent;
+	}
+
+	.irs-line-right {
+		height: 10px;
+		background-color: transparent;
+	}
+
+	.irs-bar {
+		height: 10px;
+	}
+
+	.irs-bar-edge {
+		height: 10px;
+		border-start-end-radius: 5px;
+		border-end-start-radius: 5px;
+	}
+
+	.irs-slider {
+		inset-block-start: 21px;
+		width: 18px;
+		background-color: $white;
+		border-radius: 100%;
+
+		&::before {
+			margin-inline-start: -4px;
+			inset-block-start: 4px;
+			width: 8px;
+			height: 8px;
+			border-radius: 100%;
+		}
+	}
+}
+
+.irs-outline.irs-success {
+	.irs-line {
+		border-color: #28c76f;
+
+		&:hover {
+			&::before {
+				background-color: #339701;
+			}
+		}
+
+		&:focus {
+			&::before {
+				background-color: #339701;
+			}
+		}
+	}
+
+	.irs-slider {
+		border-color: #28c76f;
+
+		&:hover {
+			&::before {
+				background-color: #339701;
+			}
+		}
+
+		&:focus {
+			&::before {
+				background-color: #339701;
+			}
+		}
+	}
+}
+
+.irs-outline.irs-dark {
+	.irs-line {
+		border-color: #191621;
+
+		&:hover {
+			&::before {
+				background-color: #313c53;
+			}
+		}
+
+		&:focus {
+			&::before {
+				background-color: #313c53;
+			}
+		}
+	}
+
+	.irs-slider {
+		border-color: #191621;
+
+		&:hover {
+			&::before {
+				background-color: #313c53;
+			}
+		}
+
+		&:focus {
+			&::before {
+				background-color: #313c53;
+			}
+		}
+	}
+}
+
+/* ************** RANGE SLIDER CLOSED ************** */
