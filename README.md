@@ -1,35 +1,26 @@
-# Report-AI: İnşaat Sahası İSG PPE Tespit Sistemi
+# Report-AI: İnşaat Sahası İSG Tespit Sistemi
 
-![Report-AI Banner](docs/assets/videoconstruc2.gif)
+## Proje Hakkında
+Report-AI, inşaat sahalarında iş güvenliğini artırmak için geliştirilmiş bir izleme sistemidir. YOLOv8 nesne tespit modelini kullanarak sahadaki kameralardan gelen görüntüleri analiz eder ve çalışanların kask, yelek, maske gibi koruyucu ekipmanları kullanıp kullanmadığını gerçek zamanlı olarak denetler.
 
-## 🏢 Proje Hakkında
-**Report-AI**, inşaat sahalarında iş sağlığı ve güvenliğini (İSG) artırmak için geliştirilmiş, yapay zeka destekli bir karar destek sistemidir. Sistem, kameralardan gelen görüntüleri gerçek zamanlı olarak analiz ederek kask, yelek ve maske gibi kişisel koruyucu donanımların (PPE) kullanımını denetler.
+## Sistem Mimarisi
+Proje üç ana parçadan oluşmaktadır:
 
----
+- Frontend: Angular ve TailwindCSS kullanılarak hazırlanan yönetim paneli. Kamera yayınlarını izlemek ve ihlalleri takip etmek için kullanılır.
+- Backend: .NET (ASP.NET Core) ile yazılmış ana API. Tüm sistemin veri akışını ve servislerin birbiriyle konuşmasını yönetir.
+- AI Servisi: FastAPI üzerinden çalışan Python servisidir. YOLOv8 modelini kullanarak görüntü işleme ve nesne tespiti yapar.
 
-## 🚀 Sistem Mimarisi
-Proje, her biri modern teknolojilerle geliştirilmiş 3 ana servisten oluşan bir **Monorepo** yapısındadır:
+## Temel Özellikler
+- Gerçek zamanlı nesne tespiti ve PPE denetimi.
+- Kullanıcı paneli üzerinden aktif/pasif kamera yönetimi.
+- AI tarafından işlenen görüntünün MJPEG formatında canlı yayını.
+- Koruyucu ekipman ihlali yapan personelin anlık raporlanması.
+- Python'un AI yetenekleri ile .NET'in kurumsal altyapısının entegrasyonu.
 
-| Servis | Teknoloji | Görevi |
-| :--- | :--- | :--- |
-| **Frontend Dashboard** | Angular + TailwindCSS | Canlı kamera izleme, ihlal logları ve kamera yönetimi. |
-| **Orchestrator Backend** | .NET (ASP.NET Core) | Veri yönetimi, API orkestrasyonu ve iş mantığı. |
-| **AI Processing Service** | FastAPI + YOLOv8 | Görüntü işleme, nesne tespiti ve MJPEG yayını. |
-
----
-
-## 🛠️ Temel Özellikler
-- 🛡️ **Gerçek Zamanlı Tespit:** YOLOv8n modeli ile yüksek doğrulukta PPE denetimi.
-- 📹 **Kamera Yönetimi:** Aktif/Pasif kamera durum kontrolü (Passive Alerts).
-- ⚡ **MJPEG Streaming:** AI tarafından işlenmiş görüntünün doğrudan tarayıcı üzerinden izlenmesi.
-- 🚨 **İhlal Takibi:** Kask veya yelek takmayan işçilerin anlık olarak sistem üzerinde raporlanması.
-- 📊 **Hibrit Mimari:** Python'un AI gücü ile .NET'in kurumsal gücünün entegrasyonu.
-
----
-
-## 📂 Kurulum Notları
+## Kurulum ve Çalıştırma
 
 ### 1. AI Servisi (Python)
+ai-service klasörüne girip sanal ortamı kurun ve bağımlılıkları yükleyin:
 ```bash
 cd ai-service
 python -m venv venv
@@ -39,6 +30,7 @@ python main.py
 ```
 
 ### 2. Backend (.NET)
+backend klasöründe projeyi ayağa kaldırın:
 ```bash
 cd backend
 dotnet restore
@@ -46,18 +38,15 @@ dotnet run --project ReportAi.Orchestrator.Api
 ```
 
 ### 3. Frontend (Angular)
+frontend klasöründe paketleri yükleyip uygulamayı başlatın:
 ```bash
 cd frontend
 npm install
 npm start
 ```
 
----
+## Katkıda Bulunma
+Projeye yeni özellikler eklemek için ekibi collaborator olarak ekleyebilir ve değişiklikleri pushlayabilirsiniz.
 
-## 👤 Geliştirici & Katkıda Bulunma
-Bu proje **Report-AI** ekibi tarafından geliştirilmiştir. İş birliği yapmak için arkadaşınızı Collaborator olarak ekleyebilir ve `git pull`/`git push` ile ortak çalışmaya başlayabilirsiniz.
-
----
-
-## 📝 Lisans
-Bu proje MIT lisansı ile korunmaktadır.
+## Lisans
+Bu proje MIT lisansı altındadır.
